@@ -24,6 +24,8 @@ function pronamic_subscriptions_init() {
 
 	load_plugin_textdomain( 'pronamic_subscriptions', false, $relPath );
 
+	// http://codex.wordpress.org/Function_Reference/register_post_type
+	// max. 20 characters, can not contain capital letters or spaces
 	register_post_type( 'pronamic_subs', array(
 		'labels' => array(
 			'name' => _x( 'Subscriptions', 'post type general name', 'pronamic_subscriptions' ) , 
@@ -37,7 +39,7 @@ function pronamic_subscriptions_init() {
 			'not_found' =>  __( 'No subscriptions found', 'pronamic_subscriptions' ) , 
 			'not_found_in_trash' => __( 'No subscriptions found in Trash', 'pronamic_subscriptions' ) ,  
 			'parent_item_colon' => __( 'Parent Subscription:', 'pronamic_subscriptions' ) , 
-			'menu_name' => _x( 'Subscriptions', 'menu_name', 'pronamic_subscriptions' )
+			'menu_name' => _x( 'Subscriptions', 'menu_name', 'pronamic_subscriptions' ) 
 		) , 
 		'public' => true ,
 		'publicly_queryable' => true ,
