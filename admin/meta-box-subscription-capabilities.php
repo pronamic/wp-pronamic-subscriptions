@@ -14,9 +14,3 @@ if ( ! empty( $role ) ) {
 		echo ' ';
 	}
 }
-
-if ( pronamic_subscription_can( 'manage_options' ) ) {
-	echo '<p>Jep, kan opties beheren.</p>';
-} else {
-	echo '<p>Nope, kan geen opties beheren.</p>';
-}
