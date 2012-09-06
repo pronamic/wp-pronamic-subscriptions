@@ -2,95 +2,107 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-08 09:47+0100\n"
-"PO-Revision-Date: 2012-08-08 09:47+0100\n"
+"POT-Creation-Date: 2012-09-06 14:45+0100\n"
+"PO-Revision-Date: 2012-09-06 14:45+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;"
+"_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;"
+"esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Language: Dutch\n"
-"X-Poedit-Country: NETHERLANDS\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-subscriptions.php:29
+#: pronamic-subscriptions.php:42
 msgctxt "post type general name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:30
+#: pronamic-subscriptions.php:43
 msgctxt "post type singular name"
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: pronamic-subscriptions.php:31
+#: pronamic-subscriptions.php:44
 msgctxt "pronamic_subscription"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: pronamic-subscriptions.php:32
+#: pronamic-subscriptions.php:45
 msgid "Add New Subscription"
 msgstr "Nieuw abonnementen toevoegen"
 
-#: pronamic-subscriptions.php:33
+#: pronamic-subscriptions.php:46
 msgid "Edit Subscription"
 msgstr "Bewerken abonnement"
 
-#: pronamic-subscriptions.php:34
+#: pronamic-subscriptions.php:47
 msgid "New Subscription"
 msgstr "Nieuw abonnement toevoegen"
 
-#: pronamic-subscriptions.php:35
+#: pronamic-subscriptions.php:48
 msgid "View Subscription"
 msgstr "Bekijk abonnement"
 
-#: pronamic-subscriptions.php:36
+#: pronamic-subscriptions.php:49
 msgid "Search Subscriptions"
 msgstr "Zoek abonnementen"
 
-#: pronamic-subscriptions.php:37
+#: pronamic-subscriptions.php:50
 msgid "No subscriptions found"
 msgstr "Geen abonnementen gevonden"
 
-#: pronamic-subscriptions.php:38
+#: pronamic-subscriptions.php:51
 msgid "No subscriptions found in Trash"
 msgstr "Geen abonnementen gevonden in de prullenbak"
 
-#: pronamic-subscriptions.php:39
+#: pronamic-subscriptions.php:52
 msgid "Parent Subscription:"
 msgstr "Bovenliggende abonnement:"
 
-#: pronamic-subscriptions.php:40
+#: pronamic-subscriptions.php:53
 msgctxt "menu_name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:49
+#: pronamic-subscriptions.php:62
 msgctxt "slug"
 msgid "subscriptions"
 msgstr "abonnementen"
 
-#~ msgctxt "post type singular name"
+#: pronamic-subscriptions.php:83
+msgid "Subscription Details"
+msgstr "Abonnement details"
 
+#: admin/meta-box-subscription-details.php:10
+msgid "Price:"
+msgstr "Prijs:"
+
+#: admin/meta-box-subscription-details.php:15
+msgid "Role:"
+msgstr "Rol:"
+
+#~ msgctxt "post type singular name"
 #~ msgid "Company Subscription"
 #~ msgstr "bedrijfsabonnement"
-#~ msgctxt "slug"
 
+#~ msgctxt "slug"
 #~ msgid "companies_subscriptions"
 #~ msgstr "bedrijfsabonnementen"
-#~ msgctxt "slug"
 
+#~ msgctxt "slug"
 #~ msgid "companies"
 #~ msgstr "bedrijfsabonnementen"
-#~ msgctxt "post type general name"
 
+#~ msgctxt "post type general name"
 #~ msgid "Companies"
 #~ msgstr "Bedrijven"
-#~ msgctxt "post type singular name"
 
+#~ msgctxt "post type singular name"
 #~ msgid "Company"
 #~ msgstr "Bedrijf"
 
@@ -111,12 +123,12 @@ msgstr "abonnementen"
 
 #~ msgid "Companies"
 #~ msgstr "Bedrijvengids"
-#~ msgctxt "category general name"
 
+#~ msgctxt "category general name"
 #~ msgid "Company Category"
 #~ msgstr "Bedrijf categorie"
-#~ msgctxt "category singular name"
 
+#~ msgctxt "category singular name"
 #~ msgid "Company Category"
 #~ msgstr "Bdrijf categorie"
 
@@ -146,16 +158,16 @@ msgstr "abonnementen"
 
 #~ msgid "Categories"
 #~ msgstr "Categorieën"
-#~ msgctxt "slug"
 
+#~ msgctxt "slug"
 #~ msgid "company-category"
 #~ msgstr "bedrijfscategorie"
-#~ msgctxt "category general name"
 
+#~ msgctxt "category general name"
 #~ msgid "Company Character"
 #~ msgstr "Bedrijf karakter"
-#~ msgctxt "category singular name"
 
+#~ msgctxt "category singular name"
 #~ msgid "Company Character"
 #~ msgstr "Bedrijf karakter"
 
@@ -185,12 +197,12 @@ msgstr "abonnementen"
 
 #~ msgid "Characters"
 #~ msgstr "Karakters"
-#~ msgctxt "category general name"
 
+#~ msgctxt "category general name"
 #~ msgid "Company Region"
 #~ msgstr "Bedrijf regio"
-#~ msgctxt "category singular name"
 
+#~ msgctxt "category singular name"
 #~ msgid "Company Region"
 #~ msgstr "Bedrijf regio"
 
@@ -277,12 +289,12 @@ msgstr "abonnementen"
 
 #~ msgid "Author"
 #~ msgstr "Auteur"
-#~ msgctxt "post type general name"
 
+#~ msgctxt "post type general name"
 #~ msgid "Events"
 #~ msgstr "Evenementen"
-#~ msgctxt "post type singular name"
 
+#~ msgctxt "post type singular name"
 #~ msgid "Event"
 #~ msgstr "Evenement"
 
@@ -512,7 +524,6 @@ msgstr "abonnementen"
 #~ msgstr "versie %s"
 
 #~ msgid "Configuration deleted."
-
 #~ msgid_plural "Configurations deleted."
 #~ msgstr[0] "Configuratie verwijderd."
 #~ msgstr[1] "Configuraties verwijderd."
@@ -741,7 +752,6 @@ msgstr "abonnementen"
 #~ msgstr "iDEAL feeds"
 
 #~ msgid "Feed deleted."
-
 #~ msgid_plural "Feeds deleted."
 #~ msgstr[0] "Feed verwijderd."
 #~ msgstr[1] "Feeds verwijderd."
@@ -1186,8 +1196,8 @@ msgstr "abonnementen"
 
 #~ msgid "View all categories"
 #~ msgstr "Bekijk alle categorieën"
-#~ msgctxt "link name"
 
+#~ msgctxt "link name"
 #~ msgid "Name"
 #~ msgstr "Naam"
 
@@ -1226,12 +1236,12 @@ msgstr "abonnementen"
 
 #~ msgid "Custom URL:"
 #~ msgstr "Maatwerk URL:"
-#~ msgctxt "post type general name"
 
+#~ msgctxt "post type general name"
 #~ msgid "Blocks"
 #~ msgstr "Blokken"
-#~ msgctxt "post type singular name"
 
+#~ msgctxt "post type singular name"
 #~ msgid "Block"
 #~ msgstr "Blok"
 
