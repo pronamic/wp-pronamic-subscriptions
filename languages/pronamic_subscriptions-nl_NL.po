@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-06 14:45+0100\n"
-"PO-Revision-Date: 2012-09-06 14:45+0100\n"
+"POT-Creation-Date: 2012-09-06 16:46+0100\n"
+"PO-Revision-Date: 2012-09-06 16:46+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -17,66 +17,70 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-subscriptions.php:42
+#: pronamic-subscriptions.php:45
 msgctxt "post type general name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:43
+#: pronamic-subscriptions.php:46
 msgctxt "post type singular name"
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: pronamic-subscriptions.php:44
+#: pronamic-subscriptions.php:47
 msgctxt "pronamic_subscription"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: pronamic-subscriptions.php:45
+#: pronamic-subscriptions.php:48
 msgid "Add New Subscription"
 msgstr "Nieuw abonnementen toevoegen"
 
-#: pronamic-subscriptions.php:46
+#: pronamic-subscriptions.php:49
 msgid "Edit Subscription"
 msgstr "Bewerken abonnement"
 
-#: pronamic-subscriptions.php:47
+#: pronamic-subscriptions.php:50
 msgid "New Subscription"
 msgstr "Nieuw abonnement toevoegen"
 
-#: pronamic-subscriptions.php:48
+#: pronamic-subscriptions.php:51
 msgid "View Subscription"
 msgstr "Bekijk abonnement"
 
-#: pronamic-subscriptions.php:49
+#: pronamic-subscriptions.php:52
 msgid "Search Subscriptions"
 msgstr "Zoek abonnementen"
 
-#: pronamic-subscriptions.php:50
+#: pronamic-subscriptions.php:53
 msgid "No subscriptions found"
 msgstr "Geen abonnementen gevonden"
 
-#: pronamic-subscriptions.php:51
+#: pronamic-subscriptions.php:54
 msgid "No subscriptions found in Trash"
 msgstr "Geen abonnementen gevonden in de prullenbak"
 
-#: pronamic-subscriptions.php:52
+#: pronamic-subscriptions.php:55
 msgid "Parent Subscription:"
 msgstr "Bovenliggende abonnement:"
 
-#: pronamic-subscriptions.php:53
+#: pronamic-subscriptions.php:56
 msgctxt "menu_name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:62
+#: pronamic-subscriptions.php:65
 msgctxt "slug"
 msgid "subscriptions"
 msgstr "abonnementen"
 
-#: pronamic-subscriptions.php:83
+#: pronamic-subscriptions.php:86
 msgid "Subscription Details"
 msgstr "Abonnement details"
+
+#: pronamic-subscriptions.php:95
+msgid "Subscription Capabilities"
+msgstr "Abonnement mogelijkheden"
 
 #: admin/meta-box-subscription-details.php:10
 msgid "Price:"
