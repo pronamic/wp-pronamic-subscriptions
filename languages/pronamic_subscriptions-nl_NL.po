@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-06 16:46+0100\n"
-"PO-Revision-Date: 2012-09-06 16:46+0100\n"
+"POT-Creation-Date: 2012-09-07 13:46+0100\n"
+"PO-Revision-Date: 2012-09-07 13:46+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -74,13 +74,31 @@ msgctxt "slug"
 msgid "subscriptions"
 msgstr "abonnementen"
 
-#: pronamic-subscriptions.php:86
+#: pronamic-subscriptions.php:89
 msgid "Subscription Details"
 msgstr "Abonnement details"
 
-#: pronamic-subscriptions.php:95
+#: pronamic-subscriptions.php:98
 msgid "Subscription Capabilities"
 msgstr "Abonnement mogelijkheden"
+
+#: pronamic-subscriptions.php:151
+msgid "Role"
+msgstr "Rol"
+
+#: pronamic-subscriptions.php:152
+msgid "Price"
+msgstr "Prijs"
+
+#: pronamic-subscriptions.php:168
+msgid "None"
+msgstr "Geen"
+
+#: pronamic-subscriptions.php:182
+#: admin/meta-box-subscription-capabilities.php:34
+#, php-format
+msgid "Edit the %s role"
+msgstr "Bewerk de %s rol"
 
 #: admin/meta-box-subscription-details.php:10
 msgid "Price:"
@@ -89,6 +107,14 @@ msgstr "Prijs:"
 #: admin/meta-box-subscription-details.php:15
 msgid "Role:"
 msgstr "Rol:"
+
+#: admin/meta-box-subscription-details.php:43
+msgid "Add New Role"
+msgstr "Nieuwe rol toevoegen"
+
+#: admin/meta-box-subscription-capabilities.php:35
+msgid "Edit Capabilities"
+msgstr "Bewerk mogelijkheden"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Company Subscription"
@@ -899,9 +925,6 @@ msgstr "Rol:"
 
 #~ msgid "Owner ZIP"
 #~ msgstr "Eigenaar postcode"
-
-#~ msgid "Update user role"
-#~ msgstr "Update gebruikersrol"
 
 #~ msgid "Pronamic iDEAL"
 #~ msgstr "Pronamic iDEAL"
