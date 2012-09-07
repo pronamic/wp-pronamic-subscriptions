@@ -72,6 +72,9 @@ class Pronamic_Subscriptions_Plugin {
 	 * Admin initialize
 	 */
 	public static function admin_init() {
+		add_filter( 'manage_pronamic_subs_posts_columns',       array( __CLASS__, 'manage_posts_columns' ) );
+		add_filter( 'manage_pronamic_subs_posts_custom_column', array( __CLASS__, 'manage_custom_column' ), 10, 2 );
+
 		add_action( 'add_meta_boxes', array( __CLASS__, 'add_meta_boxes' ) );
 	
 		add_action( 'save_post',      array( __CLASS__, 'save_post' ) );
@@ -139,6 +142,61 @@ class Pronamic_Subscriptions_Plugin {
 		// Save data
 		update_post_meta( $post_id, '_pronamic_subscription_price', $price );
 		update_post_meta( $post_id, '_pronamic_subscription_role',  $role );
+	}
+	
+	/**
+	 * Add admin columns
+	 */
+	public static function manage_posts_columns( $column ) {
+	    $column['pronamic_subscription_role'] = __( 'Role', 'pronamic_subscriptions' );
+	    $column['pronamic_subscription_price'] = __( 'Price', 'pronamic_subscriptions' );
+	 
+	    return $column;
+	}
+	
+	/**
+	 * Add admin rows
+	 */
+	public static function manage_custom_column( $column_name, $post_id ) {
+	    switch ( $column_name ) {
+	        case 'pronamic_subscription_role' :
+	        	global $wp_roles;
+
+	        	$role = get_post_meta( $post_id, '_pronamic_subscription_role', true );
+	        	
+	        	if ( ! empty( $role ) ) {
+		        	$role_name = isset( $wp_roles->role_names[$role] ) ? translate_user_role( $wp_roles->role_names[$role] ) : __( 'None', 'pronamic_subscriptions' );
+	
+		        	if ( current_user_can( 'edit_roles' ) ) {
+						$edit_link = add_query_arg( array(
+							'page' => 'roles' ,
+							'action' => 'edit' , 
+							'role' => $role
+						), admin_url( 'users.php' ) );
+		
+						$edit_link = wp_nonce_url( $edit_link, 'members-component-action_edit-roles' );
+	
+		        		printf(
+		        			'<a href="%s" title="%s" target="_blank">%s</a>', 
+		        			esc_url( $edit_link ) , 
+		        			sprintf( esc_attr__( 'Edit the %s role', 'pronamic_subscriptions' ), $role_name ),
+		        			$role_name
+		        		);
+		        	} else {
+		        		echo $role_name;
+		        	}
+	        	}
+	
+	            break;
+	        case 'pronamic_subscription_price' :
+	            $price = get_post_meta( $post_id, '_pronamic_subscription_price', true );
+
+	            if ( ! empty( $price ) ) {
+	            	echo number_format( $price, 2 );
+	            }
+
+	            break;
+	    }
 	}
 }
 
