@@ -13,3 +13,11 @@ function pronamic_subscription_can( $capability, $post_id = null ) {
 		return false;
 	}
 }
+
+function pronamic_subscription_the_price( ) {
+	$price = get_post_meta( get_the_ID(), '_pronamic_subscription_price', true );
+
+	if ( !empty( $price ) ) {
+		echo '&euro; ', number_format( $price, 2, ',', '.' );
+	}
+}
