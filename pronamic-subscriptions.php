@@ -14,6 +14,8 @@ Text Domain: pronamic_subscriptions
 Domain Path: /languages/
 
 License: GPL
+
+GitHub URI: https://github.com/pronamic/wp-pronamic-subscriptions
 */
 
 class Pronamic_Subscriptions_Plugin {
