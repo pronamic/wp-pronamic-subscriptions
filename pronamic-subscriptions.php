@@ -30,7 +30,7 @@ class Pronamic_Subscriptions_Plugin {
 	/**
 	 * Initialize
 	 */
-	function init() {
+	public static function init() {
 		// Text domain
 		$rel_path = dirname( plugin_basename( __FILE__ ) ) . '/languages/';
 	
