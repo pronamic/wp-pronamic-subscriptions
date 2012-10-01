@@ -2,7 +2,7 @@
 
 global $post;
 
-wp_nonce_field( 'pronamic_subscriptions_save_details', 'pronamic_subscriptions_nonce' );
+wp_nonce_field( 'pronamic_subscription_save_details', 'pronamic_subscriptions_nonce' );
 
 ?>
 

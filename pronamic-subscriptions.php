@@ -80,13 +80,15 @@ class Pronamic_Subscriptions_Plugin {
 
 		add_action( 'add_meta_boxes', array( __CLASS__, 'add_meta_boxes' ) );
 	
-		add_action( 'save_post',      array( __CLASS__, 'save_post' ) );
+		add_action( 'save_post',      array( __CLASS__, 'save_post_subscription_details' ) );
+		add_action( 'save_post',      array( __CLASS__, 'save_post_subscription' ) );
 	}
 
 	/**
 	 * Add meta boxes
 	 */
 	public static function add_meta_boxes() {
+		// Subscriptions
 		add_meta_box( 
 			'pronamic_subscription_meta_box_details', // id
 			__( 'Subscription Details', 'pronamic_subscriptions' ), // title
@@ -102,6 +104,16 @@ class Pronamic_Subscriptions_Plugin {
 			array( __CLASS__, 'meta_box_subscription_capabilities' ), // callback
 			'pronamic_subs', // post_type 
 			'normal', // context
+			'high' // priority
+    	);
+
+    	// Other post types
+		add_meta_box( 
+			'pronamic_subscription_meta_box', // id
+			__( 'Subscription', 'pronamic_subscriptions' ), // title
+			array( __CLASS__, 'meta_box_subscription' ), // callback
+			'pronamic_company', // post_type 
+			'side', // context
 			'high' // priority
     	);
 	}
@@ -121,18 +133,22 @@ class Pronamic_Subscriptions_Plugin {
 	}
 
 	/**
-	 * Save post
+	 * Meta box subscription details
 	 */
-	function save_post( $post_id ) {
+	public static function meta_box_subscription() {
+		include 'admin/meta-box-subscription.php';
+	}
+
+	/**
+	 * Save post subscription details
+	 */
+	function save_post_subscription_details( $post_id ) {
 		global $post;
 	
 		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 			return;
 	
-		if( ! isset( $_POST['pronamic_subscriptions_nonce'] ) )
-			return;
-	
-		if( ! wp_verify_nonce( $_POST['pronamic_subscriptions_nonce'], 'pronamic_subscriptions_save_details' ) )
+		if( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save_details' ) )
 			return;
 	
 		if( ! current_user_can( 'edit_post', $post_id ) )
@@ -145,6 +161,28 @@ class Pronamic_Subscriptions_Plugin {
 		// Save data
 		update_post_meta( $post_id, '_pronamic_subscription_price', $price );
 		update_post_meta( $post_id, '_pronamic_subscription_role',  $role );
+	}
+
+	/**
+	 * Save post subscription
+	 */
+	function save_post_subscription( $post_id ) {
+		global $post;
+	
+		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+			return;
+	
+		if( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save' ) )
+			return;
+	
+		if( ! current_user_can( 'edit_post', $post_id ) )
+			return;
+
+		// Go
+		$subscription_id = filter_input(  INPUT_POST, 'pronamic_subscription_id',  FILTER_SANITIZE_NUMBER_INT );
+		
+		// Save data
+		update_post_meta( $post_id, '_pronamic_subscription_id', $subscription_id );
 	}
 	
 	/**
