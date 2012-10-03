@@ -27,6 +27,8 @@ class Pronamic_Subscriptions_Plugin {
 		add_action( 'admin_init',     array( __CLASS__, 'admin_init' ) );
 	}
 
+	//////////////////////////////////////////////////
+
 	/**
 	 * Initialize
 	 */
