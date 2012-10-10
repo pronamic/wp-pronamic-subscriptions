@@ -38,6 +38,18 @@ function pronamic_subscription_the_price( $post_id = null ) {
 }
 
 /**
+ * Get post subscription ID
+ * 
+ * @param string $post_id
+ * @return string
+ */
+function pronamic_get_post_subscription_id( $post_id = null ) {
+	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
+
+	return get_post_meta( $post_id, '_pronamic_subscription_id', true );
+}
+
+/**
  * Check capaibility of the post
  * 
  * @param string $capability
@@ -47,7 +59,7 @@ function pronamic_subscription_the_price( $post_id = null ) {
 function pronamic_post_can( $capability, $post_id = null ) {
 	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
 
-	$subscription_id = get_post_meta( $post_id, '_pronamic_subscription_id', true );
+	$subscription_id = pronamic_get_post_subscription_id();
 
 	return pronamic_subscription_can( $capability, $subscription_id );
 }
