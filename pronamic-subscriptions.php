@@ -39,11 +39,11 @@ class Pronamic_Subscriptions_Plugin {
 	 * Bootstrap
 	 */
 	public static function bootstrap( $file ) {
-		self::$file = $file;
+		self::$file    = $file;
 		self::$dirname = dirname( $file );
 
-		add_action( 'init',           array( __CLASS__, 'init' ) );
-		add_action( 'admin_init',     array( __CLASS__, 'admin_init' ) );
+		add_action( 'init',       array( __CLASS__, 'init' ) );
+		add_action( 'admin_init', array( __CLASS__, 'admin_init' ) );
 	}
 
 	//////////////////////////////////////////////////
