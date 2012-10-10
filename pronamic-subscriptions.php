@@ -20,9 +20,28 @@ GitHub URI: https://github.com/pronamic/wp-pronamic-subscriptions
 
 class Pronamic_Subscriptions_Plugin {
 	/**
+	 * Plugin file
+	 * 
+	 * @var string
+	 */
+	public static $file;
+
+	/**
+	 * Plugin directory name
+	 * 
+	 * @var string
+	 */
+	public static $dirname;
+
+	//////////////////////////////////////////////////
+
+	/**
 	 * Bootstrap
 	 */
-	public static function bootstrap() {
+	public static function bootstrap( $file ) {
+		self::$file = $file;
+		self::$dirname = dirname( $file );
+
 		add_action( 'init',           array( __CLASS__, 'init' ) );
 		add_action( 'admin_init',     array( __CLASS__, 'admin_init' ) );
 	}
@@ -34,12 +53,12 @@ class Pronamic_Subscriptions_Plugin {
 	 */
 	public static function init() {
 		// Text domain
-		$rel_path = dirname( plugin_basename( __FILE__ ) ) . '/languages/';
+		$rel_path = dirname( plugin_basename( self::$file ) ) . '/languages/';
 	
 		load_plugin_textdomain( 'pronamic_subscriptions', false, $rel_path );
 	
 		// Includes
-		require_once 'pronamic-subscriptions-template.php';
+		require_once self::$dirname . '/pronamic-subscriptions-template.php';
 	
 		// Post type
 		// http://codex.wordpress.org/Function_Reference/register_post_type
@@ -243,4 +262,4 @@ class Pronamic_Subscriptions_Plugin {
 	}
 }
 
-Pronamic_Subscriptions_Plugin::bootstrap();
+Pronamic_Subscriptions_Plugin::bootstrap( __FILE__ );
