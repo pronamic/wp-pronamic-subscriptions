@@ -3,7 +3,7 @@ INSERT
 	SELECT 
 		ID AS post_id, 
 		'_pronamic_subscription_id' AS meta_key,
-		'1' AS meta_value
+		'1' AS meta_value /* <-- adjust this value to the subscription post ID */
 	FROM 
 		wp_posts
 	WHERE 
