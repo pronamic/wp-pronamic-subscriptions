@@ -58,7 +58,7 @@ class Pronamic_Subscriptions_Plugin {
 		load_plugin_textdomain( 'pronamic_subscriptions', false, $rel_path );
 	
 		// Includes
-		require_once self::$dirname . '/pronamic-subscriptions-template.php';
+		require_once self::$dirname . '/includes/template.php';
 	
 		// Post type
 		// http://codex.wordpress.org/Function_Reference/register_post_type
