@@ -28,12 +28,18 @@ function pronamic_subscription_can( $capability, $post_id = null ) {
  * @return string subscription price
  */
 function pronamic_subscription_the_price( $post_id = null ) {
+	echo pronamic_subscription_get_price( $post_id );
+}
+
+function pronamic_subscription_get_price( $post_id = null ) {
 	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
 
 	$price = get_post_meta( $post_id, '_pronamic_subscription_price', true );
 
 	if ( !empty( $price ) ) {
-		echo '&euro; ', number_format( $price, 2, ',', '.' );
+		$price = '&euro; ' . number_format( $price, 2, ',', '.' );
+
+		return $price;
 	}
 }
 
