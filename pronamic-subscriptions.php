@@ -86,9 +86,9 @@ class Pronamic_Subscriptions_Plugin {
 			'query_var'          => true,
 			'capability_type'    => 'post',
 			'has_archive'        => true,
-			'rewrite'            => array( 'slug' => _x( 'subscriptions', 'slug', 'pronamic_subscriptions' ) ) , 
-			'menu_icon'          => plugins_url( 'admin/icons/subscription.png', __FILE__ ) ,
-			'hierarchical'       => true,  
+			'rewrite'            => array( 'slug' => _x( 'subscriptions', 'slug', 'pronamic_subscriptions' ) ),
+			'menu_icon'          => plugins_url( 'admin/icons/subscription.png', __FILE__ ),
+			'hierarchical'       => true,
 			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields', 'page-attributes' ) 
 		));
 	}
@@ -116,7 +116,7 @@ class Pronamic_Subscriptions_Plugin {
 			__( 'Subscription Details', 'pronamic_subscriptions' ), // title
 			array( __CLASS__, 'meta_box_subscription_details' ), // callback
 			'pronamic_subs', // post_type
-			'side' , // context
+			'side', // context
 			'high' // priority
     	);
 
@@ -167,13 +167,13 @@ class Pronamic_Subscriptions_Plugin {
 	function save_post_subscription_details( $post_id ) {
 		global $post;
 	
-		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 			return;
 	
-		if( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save_details' ) )
+		if ( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save_details' ) )
 			return;
 	
-		if( ! current_user_can( 'edit_post', $post_id ) )
+		if ( ! current_user_can( 'edit_post', $post_id ) )
 			return;
 			
 		// Go
@@ -191,13 +191,13 @@ class Pronamic_Subscriptions_Plugin {
 	function save_post_subscription( $post_id ) {
 		global $post;
 	
-		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 			return;
 	
-		if( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save' ) )
+		if ( ! wp_verify_nonce( filter_input( INPUT_POST, 'pronamic_subscriptions_nonce', FILTER_SANITIZE_STRING ), 'pronamic_subscription_save' ) )
 			return;
 	
-		if( ! current_user_can( 'edit_post', $post_id ) )
+		if ( ! current_user_can( 'edit_post', $post_id ) )
 			return;
 
 		// Go
@@ -211,7 +211,7 @@ class Pronamic_Subscriptions_Plugin {
 	 * Add admin columns
 	 */
 	public static function manage_posts_columns( $column ) {
-	    $column['pronamic_subscription_role'] = __( 'Role', 'pronamic_subscriptions' );
+	    $column['pronamic_subscription_role']  = __( 'Role', 'pronamic_subscriptions' );
 	    $column['pronamic_subscription_price'] = __( 'Price', 'pronamic_subscriptions' );
 	 
 	    return $column;
