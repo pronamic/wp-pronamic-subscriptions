@@ -213,6 +213,7 @@ class Pronamic_Subscriptions_Plugin {
 	public static function manage_posts_columns( $column ) {
 	    $column['pronamic_subscription_role']  = __( 'Role', 'pronamic_subscriptions' );
 	    $column['pronamic_subscription_price'] = __( 'Price', 'pronamic_subscriptions' );
+	    $column['menu_order']                  = __( 'Order', 'pronamic_subscriptions' );
 	 
 	    return $column;
 	}
@@ -221,6 +222,8 @@ class Pronamic_Subscriptions_Plugin {
 	 * Add admin rows
 	 */
 	public static function manage_custom_column( $column_name, $post_id ) {
+       	global $post;
+
 	    switch ( $column_name ) {
 	        case 'pronamic_subscription_role' :
 	        	global $wp_roles;
@@ -259,6 +262,10 @@ class Pronamic_Subscriptions_Plugin {
 	            }
 
 	            break;
+	        case 'menu_order' :
+	        	echo $post->menu_order;
+
+	        	break;
 	    }
 	}
 }
