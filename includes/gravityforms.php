@@ -40,7 +40,6 @@ function pronamic_subscriptions_gform_editor_js() {
 
 add_action( 'gform_editor_js', 'pronamic_subscriptions_gform_editor_js' );
 
-
 /**
  * Gravity Forms - Populate subscription
  * 
@@ -82,7 +81,6 @@ function pronamic_subscriptions_gform_populate_subscriptions( $form ) {
 
 add_filter( 'gform_admin_pre_render', 'pronamic_subscriptions_gform_populate_subscriptions' );
 add_filter( 'gform_pre_render',       'pronamic_subscriptions_gform_populate_subscriptions' );
-
 
 /**
  * Gravity Forms - Post data
