@@ -97,9 +97,15 @@ function pronamic_subscriptions_gform_post_data( $post_data, $form, $lead ) {
 			$populate_subscriptions = filter_var( $field['populateSubscriptions'], FILTER_VALIDATE_BOOLEAN );
 
 			if ( $populate_subscriptions ) {
-				$field_id = $field['id'];
+				$value = RGFormsModel::get_field_value( $field );
+			
+				$separator_position = strpos( $value, '|' );
+				if ( $separator_position !== false ) {
+					$value = substr( $value, 0, $separator_position );
+					$price = substr( $value, $separator_position + 1 );
+				}
 
-				$post_data['post_custom_fields']['_pronamic_subscription_id'] =  $lead[$field_id];
+				$post_data['post_custom_fields']['_pronamic_subscription_id'] = $value;
 			}
 		}
 	}
