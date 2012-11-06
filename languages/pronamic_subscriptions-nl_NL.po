@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-07 13:46+0100\n"
-"PO-Revision-Date: 2012-09-07 13:46+0100\n"
+"POT-Creation-Date: 2012-11-06 15:44+0100\n"
+"PO-Revision-Date: 2012-11-06 15:44+0100\n"
 "Last-Translator: Remco Tolsma <remco@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -15,90 +15,103 @@ msgstr ""
 "esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-subscriptions.php:45
+#: pronamic-subscriptions.php:69
 msgctxt "post type general name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:46
+#: pronamic-subscriptions.php:70
 msgctxt "post type singular name"
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: pronamic-subscriptions.php:47
+#: pronamic-subscriptions.php:71
 msgctxt "pronamic_subscription"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: pronamic-subscriptions.php:48
+#: pronamic-subscriptions.php:72
 msgid "Add New Subscription"
 msgstr "Nieuw abonnementen toevoegen"
 
-#: pronamic-subscriptions.php:49
+#: pronamic-subscriptions.php:73
 msgid "Edit Subscription"
 msgstr "Bewerken abonnement"
 
-#: pronamic-subscriptions.php:50
+#: pronamic-subscriptions.php:74
 msgid "New Subscription"
 msgstr "Nieuw abonnement toevoegen"
 
-#: pronamic-subscriptions.php:51
+#: pronamic-subscriptions.php:75
 msgid "View Subscription"
 msgstr "Bekijk abonnement"
 
-#: pronamic-subscriptions.php:52
+#: pronamic-subscriptions.php:76
 msgid "Search Subscriptions"
 msgstr "Zoek abonnementen"
 
-#: pronamic-subscriptions.php:53
+#: pronamic-subscriptions.php:77
 msgid "No subscriptions found"
 msgstr "Geen abonnementen gevonden"
 
-#: pronamic-subscriptions.php:54
+#: pronamic-subscriptions.php:78
 msgid "No subscriptions found in Trash"
 msgstr "Geen abonnementen gevonden in de prullenbak"
 
-#: pronamic-subscriptions.php:55
+#: pronamic-subscriptions.php:79
 msgid "Parent Subscription:"
 msgstr "Bovenliggende abonnement:"
 
-#: pronamic-subscriptions.php:56
+#: pronamic-subscriptions.php:80
 msgctxt "menu_name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:65
+#: pronamic-subscriptions.php:89
 msgctxt "slug"
 msgid "subscriptions"
 msgstr "abonnementen"
 
-#: pronamic-subscriptions.php:89
+#: pronamic-subscriptions.php:116
 msgid "Subscription Details"
 msgstr "Abonnement details"
 
-#: pronamic-subscriptions.php:98
+#: pronamic-subscriptions.php:125
 msgid "Subscription Capabilities"
 msgstr "Abonnement mogelijkheden"
 
-#: pronamic-subscriptions.php:151
+#: pronamic-subscriptions.php:135 admin/meta-box-subscription.php:10
+msgid "Subscription"
+msgstr "Abonnement"
+
+#: pronamic-subscriptions.php:214
 msgid "Role"
 msgstr "Rol"
 
-#: pronamic-subscriptions.php:152
+#: pronamic-subscriptions.php:215
 msgid "Price"
 msgstr "Prijs"
 
-#: pronamic-subscriptions.php:168
+#: pronamic-subscriptions.php:216
+msgid "Order"
+msgstr "Volgorde"
+
+#: pronamic-subscriptions.php:234
 msgid "None"
 msgstr "Geen"
 
-#: pronamic-subscriptions.php:182
+#: pronamic-subscriptions.php:248
 #: admin/meta-box-subscription-capabilities.php:34
 #, php-format
 msgid "Edit the %s role"
 msgstr "Bewerk de %s rol"
+
+#: admin/meta-box-subscription.php:24
+msgid "&mdash; No Subscription &mdash;"
+msgstr "&mdash; Geen abonnement &mdash;"
 
 #: admin/meta-box-subscription-details.php:10
 msgid "Price:"
@@ -115,6 +128,10 @@ msgstr "Nieuwe rol toevoegen"
 #: admin/meta-box-subscription-capabilities.php:35
 msgid "Edit Capabilities"
 msgstr "Bewerk mogelijkheden"
+
+#: includes/gravityforms.php:16
+msgid "Populate with Subscriptions"
+msgstr "Vullen met abonnementen"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Company Subscription"
@@ -911,9 +928,6 @@ msgstr "Bewerk mogelijkheden"
 #~ msgid "Page:"
 #~ msgstr "Pagina:"
 
-#~ msgid "&mdash; Select &mdash;"
-#~ msgstr "&mdash; Selecteren &mdash;"
-
 #~ msgid "URL:"
 #~ msgstr "URL:"
 
@@ -931,9 +945,6 @@ msgstr "Bewerk mogelijkheden"
 
 #~ msgid "Purchase #%s"
 #~ msgstr "Aankoop #%s"
-
-#~ msgid "Order %s"
-#~ msgstr "Bestelling %s"
 
 #~ msgid "&mdash; Select configuration &mdash;"
 #~ msgstr "&mdash; Selecteer configuratie &mdash;"
