@@ -37,7 +37,7 @@ wp_nonce_field( 'pronamic_subscription_save_details', 'pronamic_subscriptions_no
 		?>
 	</select>
 
-	<?php if ( current_user_can( 'create_roles' ) ): ?>
+	<?php if ( current_user_can( 'create_roles' ) ) : ?>
 	
 		<a href="<?php echo admin_url( 'users.php?page=role-new' ); ?>" target="_blank">
 			<?php  _e( 'Add New Role', 'pronamic_subscriptions' ); ?>

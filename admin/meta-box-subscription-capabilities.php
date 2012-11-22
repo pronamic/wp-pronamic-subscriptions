@@ -29,7 +29,7 @@ if ( ! empty( $role ) ) {
 	
 	$edit_link = wp_nonce_url( $edit_link, 'members-component-action_edit-roles' );
 
-	if ( current_user_can( 'edit_roles' ) ): ?>
+	if ( current_user_can( 'edit_roles' ) ) : ?>
 	
 		<a href="<?php echo esc_url( $edit_link ); ?>" title="<?php printf( esc_attr__( 'Edit the %s role', 'members' ), $name ); ?>">
 			<strong><?php _e( 'Edit Capabilities', 'pronamic_subscriptions' ); ?></strong>

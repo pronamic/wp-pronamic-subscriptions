@@ -68,7 +68,7 @@ class Pronamic_Subscriptions_Plugin {
 			'labels'             => array(
 				'name'               => _x( 'Subscriptions', 'post type general name', 'pronamic_subscriptions' ),
 				'singular_name'      => _x( 'Subscription', 'post type singular name', 'pronamic_subscriptions' ),
-				'add_new'            => _x( 'Add New', 'pronamic_subscription', 'pronamic_subscriptions' ),
+				'add_new'            => _x( 'Add New', 'pronamic_subscriptions', 'pronamic_subscriptions' ),
 				'add_new_item'       => __( 'Add New Subscription', 'pronamic_subscriptions' ),
 				'edit_item'          => __( 'Edit Subscription', 'pronamic_subscriptions' ),
 				'new_item'           => __( 'New Subscription', 'pronamic_subscriptions' ),
