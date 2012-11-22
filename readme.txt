@@ -12,7 +12,7 @@ This plugin add some basic subscription functionalities to WordPress.
 This plugin add some basic subscription functionalities to WordPress. It allow you 
 create subscription information posts (custom post type). You can bind WordPress user 
 roles to these subscription post types. In addition, you can bind these subscription 
-posts to other posts. This can be used within WordPress templates to check in post
+posts to other posts. This can be used within WordPress templates to check if an post
 has a specific capability.
 
 
