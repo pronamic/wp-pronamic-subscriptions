@@ -2,7 +2,7 @@
 /*
 Plugin Name: Pronamic Subscriptions
 Plugin URI: http://pronamic.eu/wordpress/subscriptions/
-Description: This plugin add some basic company directory functionality to WordPress
+Description: This plugin add some basic subscription functionalities to WordPress
 
 Version: 0.1
 Requires at least: 3.0
