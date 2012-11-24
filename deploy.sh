@@ -3,9 +3,9 @@
 # The difference is that this script lives in the plugin's git repo & doesn't require an existing SVN repo.
 
 # main config
-PLUGINSLUG="pronamic-ideal"
+PLUGINSLUG="pronamic-subscriptions"
 CURRENTDIR=`pwd`
-MAINFILE="pronamic-ideal.php" # this should be the name of your main php file in the wordpress plugin
+MAINFILE="pronamic-subscriptions.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
 GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
@@ -13,7 +13,7 @@ GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
 # svn config
 SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
 SVNURL="http://plugins.svn.wordpress.org/pronamic-ideal/" # Remote SVN repo on wordpress.org, with no trailing slash
-SVNUSER="pronamic" # your svn username
+SVNUSER="remcotolsma" # your svn username
 
 
 # Let's begin...
