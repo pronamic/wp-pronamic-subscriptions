@@ -28,7 +28,7 @@ Upload the Pronamic Subscriptions folder to your wp-content/plugins folder.
 
 == Changelog ==
 
-= 0.2.0
+= 0.2.0 =
 *	Fixed and improved support for the Gravity Forms Update Post plugin
 *	Improved Dutch translations
 
