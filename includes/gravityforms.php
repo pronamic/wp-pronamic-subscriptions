@@ -2,12 +2,12 @@
 
 /**
  * Gravity Forms - Field advanced settings
- * 
+ *
  * @param int $position
  * @param int $form_id
  */
 function pronamic_subscriptions_gform_field_advanced_settings( $position, $form_id ) {
-	if ( $position == 450 ): ?>
+	if ( $position == 450 ) : ?>
 
 		<li class="product_field_type_setting field_setting" style="display: list-item;">
 			<input type="checkbox" id="pronamic_populate_subscriptions" onclick="SetFieldProperty('populateSubscriptions', this.checked); ToggleInputName();" />
@@ -42,7 +42,7 @@ add_action( 'gform_editor_js', 'pronamic_subscriptions_gform_editor_js' );
 
 /**
  * Gravity Forms - Populate subscription
- * 
+ *
  * @param array $form
  */
 function pronamic_subscriptions_gform_populate_subscriptions( $form ) {
@@ -52,7 +52,7 @@ function pronamic_subscriptions_gform_populate_subscriptions( $form ) {
 
 			if ( $populate_subscriptions ) {
 				// Make sure we only get subscriptions once
-				if ( !isset( $subscriptions ) ) {
+				if ( ! isset( $subscriptions ) ) {
 					$subscriptions = get_posts( array(
 						'post_type' => 'pronamic_subs',
 						'nopaging'  => true,
@@ -84,7 +84,7 @@ add_filter( 'gform_pre_render',       'pronamic_subscriptions_gform_populate_sub
 
 /**
  * Gravity Forms - Post data
- * 
+ *
  * @param array $post_data
  * @param array $form
  * @param array $lead
@@ -96,7 +96,7 @@ function pronamic_subscriptions_gform_post_data( $post_data, $form, $lead ) {
 
 			if ( $populate_subscriptions ) {
 				$value = RGFormsModel::get_field_value( $field );
-			
+
 				$separator_position = strpos( $value, '|' );
 				if ( $separator_position !== false ) {
 					$value = substr( $value, 0, $separator_position );
