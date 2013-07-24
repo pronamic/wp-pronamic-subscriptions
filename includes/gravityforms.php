@@ -97,6 +97,7 @@ function pronamic_subscriptions_gform_post_data( $post_data, $form, $lead ) {
 			if ( $populate_subscriptions ) {
 				$value = RGFormsModel::get_field_value( $field );
 
+				// Value is in '$value|$price' notation (for example: 2074|15)
 				$separator_position = strpos( $value, '|' );
 				if ( $separator_position !== false ) {
 					$value = substr( $value, 0, $separator_position );
@@ -112,3 +113,23 @@ function pronamic_subscriptions_gform_post_data( $post_data, $form, $lead ) {
 }
 
 add_filter( 'gform_post_data', 'pronamic_subscriptions_gform_post_data', 10, 3 );
+
+function pronamic_subscriptions_gform_pre_submission_filter( $form ) {
+	foreach ( $form['fields'] as &$field ) {
+		if ( isset( $field['populateSubscriptions'] ) ) {
+			$populate_subscriptions = filter_var( $field['populateSubscriptions'], FILTER_VALIDATE_BOOLEAN );
+
+			if ( $populate_subscriptions ) {
+				// We adjust the field type so 'Gravity Forms' handles it correctly
+				// Also the 'Gravity Forms Update Post' plugin requires this
+				$field['type']                  = 'post_custom_field';
+				$field['postCustomFieldName']   = '_pronamic_subscription_id';
+				$field['postCustomFieldUnique'] = true;
+			}
+		}
+	}
+
+	return $form;
+}
+
+add_filter( 'gform_pre_submission_filter', 'pronamic_subscriptions_gform_pre_submission_filter' );
