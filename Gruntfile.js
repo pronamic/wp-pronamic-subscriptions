@@ -1,7 +1,10 @@
 module.exports = function( grunt ) {
 	// Project configuration.
 	grunt.initConfig( {
+		// Package
 		pkg: grunt.file.readJSON( 'package.json' ),
+		
+		// PHPLint
 		phplint: {
 			options: {
 				phpArgs: {
@@ -10,6 +13,8 @@ module.exports = function( grunt ) {
 			},
 			all: [ '**/*.php' ]
 		},
+		
+		// Check WordPress version
 		checkwpversion: {
 			options: {
 				readme: 'readme.txt',
@@ -26,6 +31,8 @@ module.exports = function( grunt ) {
 				compare: '=='
 			}
 		},
+		
+		// Make POT
 		makepot: {
 			target: {
 				options: {
