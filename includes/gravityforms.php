@@ -135,27 +135,29 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 * @return unknown
 	 */
 	function populate_subscriptions( $form ) {
-		foreach ( $this->subscription_fields as &$field ) {
-			// Make sure we only get subscriptions once
-			if ( ! isset( $subscriptions ) ) {
-				$subscriptions = get_posts( array(
-					'post_type' => 'pronamic_subs',
-					'nopaging'  => true,
-					'orderby'   => 'menu_order',
-					'order'     => 'ASC',
-				) );
-			}
-			
-			// Build new choices array
-			$field['choices'] = array();
-			
-			foreach ( $subscriptions as $subscription ) {
-				$field['choices'][] = array(
-					'text'       => $subscription->post_title,
-					'value'      => 'test' . $subscription->ID,
-					'price'      => pronamic_subscription_get_price( $subscription->ID ),
-					'isSelected' => false,
-				);
+		if ( $this->is_processing( $form ) ) {
+			foreach ( $this->subscription_fields as &$field ) {
+				// Make sure we only get subscriptions once
+				if ( ! isset( $subscriptions ) ) {
+					$subscriptions = get_posts( array(
+						'post_type' => 'pronamic_subs',
+						'nopaging'  => true,
+						'orderby'   => 'menu_order',
+						'order'     => 'ASC',
+					) );
+				}
+				
+				// Build new choices array
+				$field['choices'] = array();
+				
+				foreach ( $subscriptions as $subscription ) {
+					$field['choices'][] = array(
+						'text'       => $subscription->post_title,
+						'value'      => 'test' . $subscription->ID,
+						'price'      => pronamic_subscription_get_price( $subscription->ID ),
+						'isSelected' => false,
+					);
+				}
 			}
 		}
 
@@ -170,17 +172,19 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 * @param array $lead
 	 */
 	function post_data( $post_data, $form, $lead ) {
-		foreach ( $this->subscription_fields as &$field ) {
-			$value = RGFormsModel::get_field_value( $field );
-	
-			// Value is in '$value|$price' notation (for example: 2074|15)
-			$separator_position = strpos( $value, '|' );
-			if ( $separator_position !== false ) {
-				$value = substr( $value, 0, $separator_position );
-				$price = substr( $value, $separator_position + 1 );
+		if ( $this->is_processing( $form ) ) {
+			foreach ( $this->subscription_fields as &$field ) {
+				$value = RGFormsModel::get_field_value( $field );
+		
+				// Value is in '$value|$price' notation (for example: 2074|15)
+				$separator_position = strpos( $value, '|' );
+				if ( $separator_position !== false ) {
+					$value = substr( $value, 0, $separator_position );
+					$price = substr( $value, $separator_position + 1 );
+				}
+		
+				$post_data['post_custom_fields']['_pronamic_subscription_id'] = $value;
 			}
-	
-			$post_data['post_custom_fields']['_pronamic_subscription_id'] = $value;
 		}
 	
 		return $post_data;
