@@ -114,7 +114,9 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 						// We adjust the field type so 'Gravity Forms' handles it correctly
 						// The 'Gravity Forms Update Post' plugin also requires this
 						if ( ! is_admin() ) {
-							$field['type'] = 'post_custom_field';
+							// No longer change the 'type' of the field, otherwise Gravity Forms price calculation will break.
+							// @since 1.0.0
+							// $field['type'] = 'post_custom_field';
 						}
 
 						$field['postCustomFieldName']   = '_pronamic_subscription_id';
