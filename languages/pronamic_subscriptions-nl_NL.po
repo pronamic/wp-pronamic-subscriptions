@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-24 10:46+0100\n"
-"PO-Revision-Date: 2013-07-24 10:46+0100\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-"
+"subscriptions\n"
+"POT-Creation-Date: 2014-03-04 15:02:46+00:00\n"
+"PO-Revision-Date: 2014-03-04 16:03+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -15,23 +16,41 @@ msgstr ""
 "esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-subscriptions.php:69
-msgctxt "post type general name"
-msgid "Subscriptions"
-msgstr "Abonnementen"
+#: admin/meta-box-subscription-capabilities.php:34
+#: pronamic-subscriptions.php:248
+msgid "Edit the %s role"
+msgstr "Bewerk de %s rol"
 
-#: pronamic-subscriptions.php:70
-msgctxt "post type singular name"
+#: admin/meta-box-subscription-capabilities.php:35
+msgid "Edit Capabilities"
+msgstr "Bewerk mogelijkheden"
+
+#: admin/meta-box-subscription-details.php:10
+msgid "Price:"
+msgstr "Prijs:"
+
+#: admin/meta-box-subscription-details.php:15
+msgid "Role:"
+msgstr "Rol:"
+
+#: admin/meta-box-subscription-details.php:43
+msgid "Add New Role"
+msgstr "Nieuwe rol toevoegen"
+
+#: admin/meta-box-subscription.php:10 pronamic-subscriptions.php:135
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: pronamic-subscriptions.php:71
-msgctxt "pronamic_subscriptions"
-msgid "Add New"
-msgstr "Nieuwe abonnement"
+#: admin/meta-box-subscription.php:24
+msgid "&mdash; No Subscription &mdash;"
+msgstr "&mdash; Geen abonnement &mdash;"
+
+#: includes/gravityforms.php:16
+msgid "Populate with Subscriptions"
+msgstr "Vullen met abonnementen"
 
 #: pronamic-subscriptions.php:72
 msgid "Add New Subscription"
@@ -65,16 +84,6 @@ msgstr "Geen abonnementen gevonden in de prullenbak"
 msgid "Parent Subscription:"
 msgstr "Bovenliggende abonnement:"
 
-#: pronamic-subscriptions.php:80
-msgctxt "menu_name"
-msgid "Subscriptions"
-msgstr "Abonnementen"
-
-#: pronamic-subscriptions.php:89
-msgctxt "slug"
-msgid "subscriptions"
-msgstr "abonnementen"
-
 #: pronamic-subscriptions.php:116
 msgid "Subscription Details"
 msgstr "Abonnement details"
@@ -82,10 +91,6 @@ msgstr "Abonnement details"
 #: pronamic-subscriptions.php:125
 msgid "Subscription Capabilities"
 msgstr "Abonnement mogelijkheden"
-
-#: pronamic-subscriptions.php:135 admin/meta-box-subscription.php:10
-msgid "Subscription"
-msgstr "Abonnement"
 
 #: pronamic-subscriptions.php:214
 msgid "Role"
@@ -103,35 +108,55 @@ msgstr "Volgorde"
 msgid "None"
 msgstr "Geen"
 
-#: pronamic-subscriptions.php:248
-#: admin/meta-box-subscription-capabilities.php:34
-#, php-format
-msgid "Edit the %s role"
-msgstr "Bewerk de %s rol"
+#. Plugin Name of the plugin/theme
+msgid "Pronamic Subscriptions"
+msgstr "Pronamic Subscriptions"
 
-#: admin/meta-box-subscription-capabilities.php:35
-msgid "Edit Capabilities"
-msgstr "Bewerk mogelijkheden"
+#. Plugin URI of the plugin/theme
+msgid "http://www.happywp.com/plugins/pronamic-subscriptions/"
+msgstr "http://www.happywp.com/plugins/pronamic-subscriptions/"
 
-#: admin/meta-box-subscription-details.php:10
-msgid "Price:"
-msgstr "Prijs:"
+#. Description of the plugin/theme
+msgid "This plugin add some basic subscription functionalities to WordPress."
+msgstr ""
+"Deze plugin voegt een basis abonnementen functionaliteit toe aan WordPress."
 
-#: admin/meta-box-subscription-details.php:15
-msgid "Role:"
-msgstr "Rol:"
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr "Pronamic"
 
-#: admin/meta-box-subscription-details.php:43
-msgid "Add New Role"
-msgstr "Nieuwe rol toevoegen"
+#. Author URI of the plugin/theme
+msgid "http://www.pronamic.eu/"
+msgstr "http://www.pronamic.nl/"
 
-#: admin/meta-box-subscription.php:24
-msgid "&mdash; No Subscription &mdash;"
-msgstr "&mdash; Geen abonnement &mdash;"
+#: pronamic-subscriptions.php:69
+msgctxt "post type general name"
+msgid "Subscriptions"
+msgstr "Abonnementen"
 
-#: includes/gravityforms.php:16
-msgid "Populate with Subscriptions"
-msgstr "Vullen met abonnementen"
+#: pronamic-subscriptions.php:70
+msgctxt "post type singular name"
+msgid "Subscription"
+msgstr "Abonnement"
+
+#: pronamic-subscriptions.php:71
+msgctxt "pronamic_subscriptions"
+msgid "Add New"
+msgstr "Nieuwe abonnement"
+
+#: pronamic-subscriptions.php:80
+msgctxt "menu_name"
+msgid "Subscriptions"
+msgstr "Abonnementen"
+
+#: pronamic-subscriptions.php:89
+msgctxt "slug"
+msgid "subscriptions"
+msgstr "abonnementen"
+
+#, fuzzy
+#~ msgid "http://pronamic.eu/wordpress/subscriptions/"
+#~ msgstr "http://pronamic.eu/wordpress/pronamic-client/"
 
 #~ msgctxt "post type singular name"
 #~ msgid "Company Subscription"
@@ -864,12 +889,12 @@ msgstr "Vullen met abonnementen"
 #~ "32 tekens zal automatisch worden afgekapt."
 
 #~ msgid ""
-#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = <code>"
-#~ "{form_id}</code>, Form Title = <code>{form_title}</code>"
+#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = "
+#~ "<code>{form_id}</code>, Form Title = <code>{form_title}</code>"
 #~ msgstr ""
 #~ "Samenvoegen tag voorbeelden: Inzending ID = <code>{entry_id}</code>, "
-#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = <code>"
-#~ "{form_title}</code>"
+#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = "
+#~ "<code>{form_title}</code>"
 
 #~ msgid "Options"
 #~ msgstr "Opties"
@@ -1301,12 +1326,6 @@ msgstr "Vullen met abonnementen"
 #~ msgid "Blocks"
 #~ msgstr "Blokken"
 
-#~ msgid "http://pronamic.eu/"
-#~ msgstr "http://pronamic.nl/"
-
-#~ msgid "http://pronamic.eu/contact/"
-#~ msgstr "http://pronamic.nl/contact/"
-
 #~ msgid "Support"
 #~ msgstr "Support"
 
@@ -1321,9 +1340,6 @@ msgstr "Vullen met abonnementen"
 
 #~ msgid "News"
 #~ msgstr "Nieuws"
-
-#~ msgid "Pronamic News"
-#~ msgstr "Pronamic nieuws"
 
 #~ msgid "Concept and realisation by %s"
 #~ msgstr "Concept en realisatie door %s"

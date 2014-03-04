@@ -1,0 +1,148 @@
+# Copyright (C) 2014 Pronamic Subscriptions
+# This file is distributed under the same license as the Pronamic Subscriptions package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pronamic Subscriptions 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"http://wordpress.org/support/plugin/pronamic-subscriptions\n"
+"POT-Creation-Date: 2014-03-04 15:07:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/meta-box-subscription-capabilities.php:34
+#: pronamic-subscriptions.php:248
+msgid "Edit the %s role"
+msgstr ""
+
+#: admin/meta-box-subscription-capabilities.php:35
+msgid "Edit Capabilities"
+msgstr ""
+
+#: admin/meta-box-subscription-details.php:10
+msgid "Price:"
+msgstr ""
+
+#: admin/meta-box-subscription-details.php:15
+msgid "Role:"
+msgstr ""
+
+#: admin/meta-box-subscription-details.php:43
+msgid "Add New Role"
+msgstr ""
+
+#: admin/meta-box-subscription.php:10 pronamic-subscriptions.php:135
+msgid "Subscription"
+msgstr ""
+
+#: admin/meta-box-subscription.php:24
+msgid "&mdash; No Subscription &mdash;"
+msgstr ""
+
+#: includes/gravityforms.php:16
+msgid "Populate with Subscriptions"
+msgstr ""
+
+#: pronamic-subscriptions.php:72
+msgid "Add New Subscription"
+msgstr ""
+
+#: pronamic-subscriptions.php:73
+msgid "Edit Subscription"
+msgstr ""
+
+#: pronamic-subscriptions.php:74
+msgid "New Subscription"
+msgstr ""
+
+#: pronamic-subscriptions.php:75
+msgid "View Subscription"
+msgstr ""
+
+#: pronamic-subscriptions.php:76
+msgid "Search Subscriptions"
+msgstr ""
+
+#: pronamic-subscriptions.php:77
+msgid "No subscriptions found"
+msgstr ""
+
+#: pronamic-subscriptions.php:78
+msgid "No subscriptions found in Trash"
+msgstr ""
+
+#: pronamic-subscriptions.php:79
+msgid "Parent Subscription:"
+msgstr ""
+
+#: pronamic-subscriptions.php:116
+msgid "Subscription Details"
+msgstr ""
+
+#: pronamic-subscriptions.php:125
+msgid "Subscription Capabilities"
+msgstr ""
+
+#: pronamic-subscriptions.php:214
+msgid "Role"
+msgstr ""
+
+#: pronamic-subscriptions.php:215
+msgid "Price"
+msgstr ""
+
+#: pronamic-subscriptions.php:216
+msgid "Order"
+msgstr ""
+
+#: pronamic-subscriptions.php:234
+msgid "None"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Pronamic Subscriptions"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.happywp.com/plugins/pronamic-subscriptions/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This plugin add some basic subscription functionalities to WordPress."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.pronamic.eu/"
+msgstr ""
+
+#: pronamic-subscriptions.php:69
+msgctxt "post type general name"
+msgid "Subscriptions"
+msgstr ""
+
+#: pronamic-subscriptions.php:70
+msgctxt "post type singular name"
+msgid "Subscription"
+msgstr ""
+
+#: pronamic-subscriptions.php:71
+msgctxt "pronamic_subscriptions"
+msgid "Add New"
+msgstr ""
+
+#: pronamic-subscriptions.php:80
+msgctxt "menu_name"
+msgid "Subscriptions"
+msgstr ""
+
+#: pronamic-subscriptions.php:89
+msgctxt "slug"
+msgid "subscriptions"
+msgstr ""
