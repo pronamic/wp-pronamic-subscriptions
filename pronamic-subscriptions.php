@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Pronamic Subscriptions
-Plugin URI: http://pronamic.eu/wordpress/subscriptions/
-Description: This plugin add some basic subscription functionalities to WordPress
+Plugin URI: http://www.happywp.com/plugins/pronamic-subscriptions/
+Description: This plugin add some basic subscription functionalities to WordPress.
 
-Version: 0.2.0
+Version: 1.0.0
 Requires at least: 3.0
 
 Author: Pronamic
-Author URI: http://pronamic.eu/
+Author URI: http://www.pronamic.eu/
 
 Text Domain: pronamic_subscriptions
 Domain Path: /languages/
