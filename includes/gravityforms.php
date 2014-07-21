@@ -105,8 +105,6 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 * Find subscription fields
 	 */
 	public function find_subscription_fields( $form ) {
-		$test = $this->is_processing( $form );
-		var_dump( $test );
 		if ( $this->is_processing( $form ) ) {
 			foreach ( $form['fields'] as &$field ) {
 				if ( isset( $field['populateSubscriptions'] ) ) {

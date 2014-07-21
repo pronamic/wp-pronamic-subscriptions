@@ -3,7 +3,7 @@ Contributors: pronamic, remcotolsma, kjtolsma
 Tags: pronamic, companies
 Requires at least: 3.0
 Tested up to: 3.9.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 This plugin add some basic subscription functionalities to WordPress.
 
@@ -27,6 +27,9 @@ Upload the Pronamic Subscriptions folder to your wp-content/plugins folder.
 
 
 == Changelog ==
+
+= 1.0.2 =
+*	Fix - Removed an var_dump().
 
 = 1.0.1 =
 *	Fix - Some strict standards non-static method messages.

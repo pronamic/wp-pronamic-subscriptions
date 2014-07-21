@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Pronamic Companies\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-"
 "subscriptions\n"
-"POT-Creation-Date: 2014-07-21 13:52:15+00:00\n"
-"PO-Revision-Date: 2014-07-21 15:54+0100\n"
+"POT-Creation-Date: 2014-07-21 14:25:05+00:00\n"
+"PO-Revision-Date: 2014-07-21 16:25+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -20,91 +20,219 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: admin/meta-box-subscription-capabilities.php:34
-#: pronamic-subscriptions.php:248
+#: deploy/admin/meta-box-subscription-capabilities.php:34
+#: deploy/pronamic-subscriptions.php:248 pronamic-subscriptions.php:248
+#: wp-svn/tags/0.1/admin/meta-box-subscription-capabilities.php:34
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:248
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription-capabilities.php:34
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:248
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription-capabilities.php:34
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:248
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription-capabilities.php:34
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:248
+#: wp-svn/trunk/admin/meta-box-subscription-capabilities.php:34
+#: wp-svn/trunk/pronamic-subscriptions.php:248
 msgid "Edit the %s role"
 msgstr "Bewerk de %s rol"
 
 #: admin/meta-box-subscription-capabilities.php:35
+#: deploy/admin/meta-box-subscription-capabilities.php:35
+#: wp-svn/tags/0.1/admin/meta-box-subscription-capabilities.php:35
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription-capabilities.php:35
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription-capabilities.php:35
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription-capabilities.php:35
+#: wp-svn/trunk/admin/meta-box-subscription-capabilities.php:35
 msgid "Edit Capabilities"
 msgstr "Bewerk mogelijkheden"
 
 #: admin/meta-box-subscription-details.php:10
+#: deploy/admin/meta-box-subscription-details.php:10
+#: wp-svn/tags/0.1/admin/meta-box-subscription-details.php:10
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription-details.php:10
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription-details.php:10
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription-details.php:10
+#: wp-svn/trunk/admin/meta-box-subscription-details.php:10
 msgid "Price:"
 msgstr "Prijs:"
 
 #: admin/meta-box-subscription-details.php:15
+#: deploy/admin/meta-box-subscription-details.php:15
+#: wp-svn/tags/0.1/admin/meta-box-subscription-details.php:15
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription-details.php:15
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription-details.php:15
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription-details.php:15
+#: wp-svn/trunk/admin/meta-box-subscription-details.php:15
 msgid "Role:"
 msgstr "Rol:"
 
 #: admin/meta-box-subscription-details.php:43
+#: deploy/admin/meta-box-subscription-details.php:43
+#: wp-svn/tags/0.1/admin/meta-box-subscription-details.php:43
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription-details.php:43
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription-details.php:43
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription-details.php:43
+#: wp-svn/trunk/admin/meta-box-subscription-details.php:43
 msgid "Add New Role"
 msgstr "Nieuwe rol toevoegen"
 
-#: admin/meta-box-subscription.php:10 pronamic-subscriptions.php:135
+#: admin/meta-box-subscription.php:10
+#: deploy/admin/meta-box-subscription.php:10
+#: deploy/pronamic-subscriptions.php:135 pronamic-subscriptions.php:135
+#: wp-svn/tags/0.1/admin/meta-box-subscription.php:10
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:135
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription.php:10
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:135
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription.php:10
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:135
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription.php:10
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:135
+#: wp-svn/trunk/admin/meta-box-subscription.php:10
+#: wp-svn/trunk/pronamic-subscriptions.php:135
 msgid "Subscription"
 msgstr "Abonnement"
 
 #: admin/meta-box-subscription.php:24
+#: deploy/admin/meta-box-subscription.php:24
+#: wp-svn/tags/0.1/admin/meta-box-subscription.php:24
+#: wp-svn/tags/0.2.0/admin/meta-box-subscription.php:24
+#: wp-svn/tags/1.0.0/admin/meta-box-subscription.php:24
+#: wp-svn/tags/1.0.1/admin/meta-box-subscription.php:24
+#: wp-svn/trunk/admin/meta-box-subscription.php:24
 msgid "&mdash; No Subscription &mdash;"
 msgstr "&mdash; Geen abonnement &mdash;"
 
-#: includes/gravityforms.php:16
+#: deploy/includes/gravityforms.php:16 includes/gravityforms.php:16
+#: wp-svn/tags/0.1/includes/gravityforms.php:16
+#: wp-svn/tags/0.2.0/includes/gravityforms.php:16
+#: wp-svn/tags/1.0.0/includes/gravityforms.php:16
+#: wp-svn/tags/1.0.1/includes/gravityforms.php:16
+#: wp-svn/trunk/includes/gravityforms.php:16
 msgid "Populate with Subscriptions"
 msgstr "Vullen met abonnementen"
 
-#: pronamic-subscriptions.php:72
+#: deploy/pronamic-subscriptions.php:72 pronamic-subscriptions.php:72
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:72
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:72
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:72
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:72
+#: wp-svn/trunk/pronamic-subscriptions.php:72
 msgid "Add New Subscription"
 msgstr "Nieuw abonnementen toevoegen"
 
-#: pronamic-subscriptions.php:73
+#: deploy/pronamic-subscriptions.php:73 pronamic-subscriptions.php:73
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:73
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:73
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:73
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:73
+#: wp-svn/trunk/pronamic-subscriptions.php:73
 msgid "Edit Subscription"
 msgstr "Bewerken abonnement"
 
-#: pronamic-subscriptions.php:74
+#: deploy/pronamic-subscriptions.php:74 pronamic-subscriptions.php:74
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:74
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:74
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:74
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:74
+#: wp-svn/trunk/pronamic-subscriptions.php:74
 msgid "New Subscription"
 msgstr "Nieuw abonnement toevoegen"
 
-#: pronamic-subscriptions.php:75
+#: deploy/pronamic-subscriptions.php:75 pronamic-subscriptions.php:75
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:75
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:75
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:75
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:75
+#: wp-svn/trunk/pronamic-subscriptions.php:75
 msgid "View Subscription"
 msgstr "Bekijk abonnement"
 
-#: pronamic-subscriptions.php:76
+#: deploy/pronamic-subscriptions.php:76 pronamic-subscriptions.php:76
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:76
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:76
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:76
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:76
+#: wp-svn/trunk/pronamic-subscriptions.php:76
 msgid "Search Subscriptions"
 msgstr "Zoek abonnementen"
 
-#: pronamic-subscriptions.php:77
+#: deploy/pronamic-subscriptions.php:77 pronamic-subscriptions.php:77
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:77
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:77
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:77
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:77
+#: wp-svn/trunk/pronamic-subscriptions.php:77
 msgid "No subscriptions found"
 msgstr "Geen abonnementen gevonden"
 
-#: pronamic-subscriptions.php:78
+#: deploy/pronamic-subscriptions.php:78 pronamic-subscriptions.php:78
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:78
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:78
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:78
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:78
+#: wp-svn/trunk/pronamic-subscriptions.php:78
 msgid "No subscriptions found in Trash"
 msgstr "Geen abonnementen gevonden in de prullenbak"
 
-#: pronamic-subscriptions.php:79
+#: deploy/pronamic-subscriptions.php:79 pronamic-subscriptions.php:79
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:79
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:79
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:79
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:79
+#: wp-svn/trunk/pronamic-subscriptions.php:79
 msgid "Parent Subscription:"
 msgstr "Bovenliggende abonnement:"
 
-#: pronamic-subscriptions.php:116
+#: deploy/pronamic-subscriptions.php:116 pronamic-subscriptions.php:116
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:116
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:116
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:116
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:116
+#: wp-svn/trunk/pronamic-subscriptions.php:116
 msgid "Subscription Details"
 msgstr "Abonnement details"
 
-#: pronamic-subscriptions.php:125
+#: deploy/pronamic-subscriptions.php:125 pronamic-subscriptions.php:125
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:125
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:125
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:125
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:125
+#: wp-svn/trunk/pronamic-subscriptions.php:125
 msgid "Subscription Capabilities"
 msgstr "Abonnement mogelijkheden"
 
-#: pronamic-subscriptions.php:214
+#: deploy/pronamic-subscriptions.php:214 pronamic-subscriptions.php:214
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:214
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:214
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:214
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:214
+#: wp-svn/trunk/pronamic-subscriptions.php:214
 msgid "Role"
 msgstr "Rol"
 
-#: pronamic-subscriptions.php:215
+#: deploy/pronamic-subscriptions.php:215 pronamic-subscriptions.php:215
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:215
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:215
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:215
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:215
+#: wp-svn/trunk/pronamic-subscriptions.php:215
 msgid "Price"
 msgstr "Prijs"
 
-#: pronamic-subscriptions.php:216
+#: deploy/pronamic-subscriptions.php:216 pronamic-subscriptions.php:216
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:216
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:216
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:216
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:216
+#: wp-svn/trunk/pronamic-subscriptions.php:216
 msgid "Order"
 msgstr "Volgorde"
 
-#: pronamic-subscriptions.php:234
+#: deploy/pronamic-subscriptions.php:234 pronamic-subscriptions.php:234
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:234
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:234
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:234
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:234
+#: wp-svn/trunk/pronamic-subscriptions.php:234
 msgid "None"
 msgstr "Geen"
 
@@ -129,27 +257,52 @@ msgstr "Pronamic"
 msgid "http://www.pronamic.eu/"
 msgstr "http://www.pronamic.nl/"
 
-#: pronamic-subscriptions.php:69
+#: deploy/pronamic-subscriptions.php:69 pronamic-subscriptions.php:69
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:69
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:69
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:69
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:69
+#: wp-svn/trunk/pronamic-subscriptions.php:69
 msgctxt "post type general name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:70
+#: deploy/pronamic-subscriptions.php:70 pronamic-subscriptions.php:70
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:70
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:70
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:70
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:70
+#: wp-svn/trunk/pronamic-subscriptions.php:70
 msgctxt "post type singular name"
 msgid "Subscription"
 msgstr "Abonnement"
 
-#: pronamic-subscriptions.php:71
+#: deploy/pronamic-subscriptions.php:71 pronamic-subscriptions.php:71
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:71
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:71
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:71
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:71
+#: wp-svn/trunk/pronamic-subscriptions.php:71
 msgctxt "pronamic_subscriptions"
 msgid "Add New"
 msgstr "Nieuwe abonnement"
 
-#: pronamic-subscriptions.php:80
+#: deploy/pronamic-subscriptions.php:80 pronamic-subscriptions.php:80
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:80
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:80
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:80
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:80
+#: wp-svn/trunk/pronamic-subscriptions.php:80
 msgctxt "menu_name"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: pronamic-subscriptions.php:89
+#: deploy/pronamic-subscriptions.php:89 pronamic-subscriptions.php:89
+#: wp-svn/tags/0.1/pronamic-subscriptions.php:89
+#: wp-svn/tags/0.2.0/pronamic-subscriptions.php:89
+#: wp-svn/tags/1.0.0/pronamic-subscriptions.php:89
+#: wp-svn/tags/1.0.1/pronamic-subscriptions.php:89
+#: wp-svn/trunk/pronamic-subscriptions.php:89
 msgctxt "slug"
 msgid "subscriptions"
 msgstr "abonnementen"
