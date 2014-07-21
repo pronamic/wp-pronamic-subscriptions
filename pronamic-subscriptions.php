@@ -4,7 +4,7 @@ Plugin Name: Pronamic Subscriptions
 Plugin URI: http://www.happywp.com/plugins/pronamic-subscriptions/
 Description: This plugin add some basic subscription functionalities to WordPress.
 
-Version: 1.0.0
+Version: 1.0.1
 Requires at least: 3.0
 
 Author: Pronamic
@@ -164,7 +164,7 @@ class Pronamic_Subscriptions_Plugin {
 	/**
 	 * Save post subscription details
 	 */
-	function save_post_subscription_details( $post_id ) {
+	public static function save_post_subscription_details( $post_id ) {
 		global $post;
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
@@ -188,7 +188,7 @@ class Pronamic_Subscriptions_Plugin {
 	/**
 	 * Save post subscription
 	 */
-	function save_post_subscription( $post_id ) {
+	public static function save_post_subscription( $post_id ) {
 		global $post;
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
