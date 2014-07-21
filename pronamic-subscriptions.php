@@ -4,7 +4,7 @@ Plugin Name: Pronamic Subscriptions
 Plugin URI: http://www.happywp.com/plugins/pronamic-subscriptions/
 Description: This plugin add some basic subscription functionalities to WordPress.
 
-Version: 1.0.1
+Version: 1.0.2
 Requires at least: 3.0
 
 Author: Pronamic
