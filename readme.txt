@@ -2,8 +2,8 @@
 Contributors: pronamic, remcotolsma, kjtolsma 
 Tags: pronamic, companies
 Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 1.0.0
+Tested up to: 3.9.1
+Stable tag: 1.0.1
 
 This plugin add some basic subscription functionalities to WordPress.
 
@@ -27,6 +27,10 @@ Upload the Pronamic Subscriptions folder to your wp-content/plugins folder.
 
 
 == Changelog ==
+
+= 1.0.1 =
+*	Fix - Some strict standards non-static method messages.
+*	Fix - Gravity Forms - Fixed support for admin pre render.
 
 = 1.0.0 =
 *	Fix - Gravity Forms - Price field calculation.

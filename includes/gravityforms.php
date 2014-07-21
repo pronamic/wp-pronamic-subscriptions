@@ -50,7 +50,7 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 * @var array
 	 */
 	private $form;
-	
+
 	/**
 	 * The Gravity Forms form ID
 	 *
@@ -62,7 +62,7 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 
 	/**
 	 * Subscription fields
-	 * 
+	 *
 	 * @var array
 	 */
 	private $subscription_fields;
@@ -71,13 +71,13 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 
 	/**
 	 * Constructs and initalize an Gravity Forms payement form processor
-	 * 
+	 *
 	 * @param array $form
 	 */
 	public function __construct( array $form ) {
 		$this->form    = $form;
 		$this->form_id = isset( $form['id'] ) ? $form['id'] : null;
-		
+
 		$this->subscription_fields = array();
 
 		$this->add_hooks();
@@ -92,10 +92,10 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 		add_filter( 'gform_pre_submission_filter_' . $this->form_id, array( $this, 'find_subscription_fields' ) );
 		add_filter( 'gform_admin_pre_render_' . $this->form_id, array( $this, 'find_subscription_fields' ) );
 		add_filter( 'gform_pre_render_' . $this->form_id, array( $this, 'find_subscription_fields' ) );
-		
+
 		add_filter( 'gform_admin_pre_render_' . $this->form_id, array( $this, 'populate_subscriptions' ) );
 		add_filter( 'gform_pre_render_' . $this->form_id, array( $this, 'populate_subscriptions' ) );
-		
+
 		add_filter( 'gform_post_data_' . $this->form_id, array( $this, 'post_data' ), 10, 3 );
 	}
 
@@ -105,6 +105,8 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 * Find subscription fields
 	 */
 	public function find_subscription_fields( $form ) {
+		$test = $this->is_processing( $form );
+		var_dump( $test );
 		if ( $this->is_processing( $form ) ) {
 			foreach ( $form['fields'] as &$field ) {
 				if ( isset( $field['populateSubscriptions'] ) ) {
@@ -130,10 +132,10 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 
 		return $form;
 	}
-	
+
 	/**
 	 * Populate subscriptions
-	 * 
+	 *
 	 * @return unknown
 	 */
 	function populate_subscriptions( $form ) {
@@ -148,10 +150,10 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 						'order'     => 'ASC',
 					) );
 				}
-				
+
 				// Build new choices array
 				$field['choices'] = array();
-				
+
 				foreach ( $subscriptions as $subscription ) {
 					$field['choices'][] = array(
 						'text'       => $subscription->post_title,
@@ -177,23 +179,23 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 		if ( $this->is_processing( $form ) ) {
 			foreach ( $this->subscription_fields as &$field ) {
 				$value = RGFormsModel::get_field_value( $field );
-		
+
 				// Value is in '$value|$price' notation (for example: 2074|15)
 				$separator_position = strpos( $value, '|' );
 				if ( $separator_position !== false ) {
 					$value = substr( $value, 0, $separator_position );
 					$price = substr( $value, $separator_position + 1 );
 				}
-		
+
 				$post_data['post_custom_fields']['_pronamic_subscription_id'] = $value;
 			}
 		}
-	
+
 		return $post_data;
-	}	
+	}
 
 	//////////////////////////////////////////////////
-	
+
 	/**
 	 * Check if we are processing the passed in form
 	 *
@@ -202,18 +204,18 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 	 */
 	public function is_processing( $form ) {
 		$is_form = false;
-	
+
 		if ( isset( $form['id'] ) ) {
 			$is_form = ( $this->form_id == $form['id'] );
 		}
-	
+
 		return $is_form;
 	}
 }
 
 /**
  * Gravity Forms pre submission
- * 
+ *
  * @param array $form
  */
 function pronamic_subscriptions_gform_pre_render( $form ) {
@@ -223,3 +225,4 @@ function pronamic_subscriptions_gform_pre_render( $form ) {
 }
 
 add_action( 'gform_pre_render', 'pronamic_subscriptions_gform_pre_render' );
+add_action( 'gform_admin_pre_render', 'pronamic_subscriptions_gform_pre_render' );
