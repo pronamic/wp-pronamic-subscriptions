@@ -150,16 +150,18 @@ class Pronamic_WP_SubscriptionsPlugin_GravityFormsProcessor {
 				}
 
 				// Build new choices array
-				$field['choices'] = array();
+				$choices = array();
 
 				foreach ( $subscriptions as $subscription ) {
-					$field['choices'][] = array(
+					$choices[] = array(
 						'text'       => $subscription->post_title,
 						'value'      => $subscription->ID,
 						'price'      => pronamic_subscription_get_price( $subscription->ID ),
 						'isSelected' => false,
 					);
 				}
+
+				$field['choices'] = $choices;
 			}
 		}
 
