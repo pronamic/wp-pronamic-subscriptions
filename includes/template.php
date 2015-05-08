@@ -65,7 +65,7 @@ function pronamic_get_post_subscription_id( $post_id = null ) {
 function pronamic_post_can( $capability, $post_id = null ) {
 	$post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
 
-	$subscription_id = pronamic_get_post_subscription_id();
+	$subscription_id = pronamic_get_post_subscription_id( $post_id );
 
 	return pronamic_subscription_can( $capability, $subscription_id );
 }
