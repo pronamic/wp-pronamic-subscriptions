@@ -224,5 +224,6 @@ function pronamic_subscriptions_gform_pre_render( $form ) {
 	return $form;
 }
 
-add_action( 'gform_pre_render', 'pronamic_subscriptions_gform_pre_render' );
-add_action( 'gform_admin_pre_render', 'pronamic_subscriptions_gform_pre_render' );
+add_action( 'gform_pre_submission', 'pronamic_subscriptions_gform_pre_render' );
+add_filter( 'gform_pre_render', 'pronamic_subscriptions_gform_pre_render' );
+add_filter( 'gform_admin_pre_render', 'pronamic_subscriptions_gform_pre_render' );
